@@ -1,0 +1,95 @@
+/* Reset some default styles for cleaner layout */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the header */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2874f0;
+}
+
+/* Styling for the logo */
+.logo img {
+    width: 100px; /* Adjust the width as per your logo size */
+}
+
+/* Styling for the right content */
+.right-content {
+    display: flex; /* Flex container */
+    align-items: center; /* Center elements vertically within the container */
+}
+
+/* Styling for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-btn {
+    background-color: #ff9f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Add margin to separate search bar from profile icon */
+}
+
+/* Styling for the profile icon menu */
+.profile-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    background-color: #ff9f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+}
+
+.profile-menu:hover .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* Add padding between search bar and profile icon */
+.right-content .search-bar {
+    margin-right: 20px;
+}
